@@ -26,3 +26,6 @@ Copy and paste the "project" folder in to the htdocs folder.
 Then go to phpmyadmin and create a database called "project".
 Open the project database and import the project.sql to that database.
 After complete the process type: localhost/project in web browser. Then you will be able to run the software.
+License : Free
+Acknowledgments: W3school, www.geeksforgeeks.org,www.tutorialspoint.com, www.javatpoint.com
+Contact : sisirachaminda123@gmail.com
