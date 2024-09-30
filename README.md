@@ -5,3 +5,15 @@ The system is used for allocating the staff (teachers) to the marking panels for
 Following mentioned some functional features.
 Registration : Create a user account by using "register" link.
 you can use username: admin and password : 123 in first login.
+Allow users to view and edit their profile information, such as name, email address, and other relevant details.
+Uploading the chief examiners list to the system in csv format. 
+Marks given mechanism.
+Entering the daily attendance and daily marking progress.
+Allocating the examiners to the marking (evaluation) centers according to the marks obtained, preferred town of the application, subject and medium.
+Viewing the daily and overall evaluation progress.
+Generating the payment vouchers.
+Creating and downloading appointment letters.
+installation : Programing language is PHP and database environment is MYSQL. You can install xampp before install the software.
+ XAMPP is a completely free, easy to install Apache distribution webserver which is containing MariaDB, PHP, and Perl. The XAMPP open source package has been set up to be incredibly easy to install and to use.
+Software Requirements : Windows 8, 8.1, Windows 10,Linux and Mac are compatible operating systems.
+PHP 7.0.33 or above and MYSQL version MYSQL 8.0.22 or above.
