@@ -1,0 +1,121 @@
+@page * {
+	margin: 10px;
+}
+
+#doe {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#header {
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#panel {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#date {
+	text-align: right;
+	font-size: 12px;
+}
+
+hr {
+	color: black;
+	height: 2px;
+}
+
+#report {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#report td,
+#report th {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: center;
+}
+
+#report tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+#report tr:hover {
+	background-color: #ddd;
+}
+
+#report th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: center;
+	background-color: #0078bd;
+	color: white;
+}
+
+#report2 {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#report2 td,
+#report th {
+	border: 1px solid #ddd;
+	padding-left: 5px;
+	text-align: left;
+}
+
+#report2 tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+#report2 tr:hover {
+	background-color: #ddd;
+}
+
+#report2 th {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: left;
+	/* background-color: #bdbdbd; */
+	color: white;
+}
+
+#end {
+	text-align: center;
+	margin-top: 5px;
+}
+
+#paneld {
+	background-color: #800000 !important;
+	padding-left: 10px;
+}
+
+#chiefd {
+	background-color: #003366 !important;
+	width: 175px;
+	padding-left: 10px;
+}
+
+#achiefd {
+	background-color: #008080 !important;
+	width: 175px;
+	padding-left: 10px;
+}
+
+#examinerd {
+	background-color: #800080 !important;
+	text-align: center;
+}
+
+#mdate {
+	writing-mode: vertical-lr !important;
+	text-orientation: sideways-right !important;
+	white-space: nowrap !important;
+}

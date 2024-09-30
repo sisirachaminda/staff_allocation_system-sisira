@@ -1,0 +1,43 @@
+$html='<table border="1">';
+											
+										$sql5="SELECT MAX(valid_date)AS maxvalidproben FROM housing_progessbench WHERE status=0";
+										$result5 = mysqli_query($link ,$sql5);
+										while($row5=mysqli_fetch_array($result5)){
+											$maxvalidprobench=$row5['maxvalidproben'];
+										}
+										 
+										   $sql3= "SELECT * FROM housing_progessbench WHERE valid_date <='$maxvalidprobench' AND status=0";
+										   $result3 = mysqli_query($link ,$sql3);
+										   while($row2=mysqli_fetch_array($result3)){
+											   $html.='<tr>';
+												if($row2['bench_name']=="Agreement Signed"){
+													
+													$sql10="SELECT * FROM documents_details WHERE project_key='$m2'";
+													$result10 = mysqli_query($link ,$sql10);
+													while($row10=mysqli_fetch_array($result10)){
+														$awarded_dte=$row10['awarded_dte'];
+													}
+													$html.='<td>'.$row2['bench_name'].'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size:15px;">'.$awarded_dte.'</label></td>';	 
+												}																											//agreement signed column display awerded date
+												else{
+													$html.='<td><label style="font-size:15px;">'.$row2['bench_name'].'</label></td>';
+												}
+
+													$sql8= "SELECT * FROM progress_detailssummery WHERE project_key='$m2' AND status=0 ORDER BY progrss_detsumm_key DESC LIMIT 3";
+													$result8 = mysqli_query($link ,$sql8);
+													while($row8=mysqli_fetch_array($result8)){
+														$maxprodteos=$row8['datos'];
+													
+													
+														$sql9="SELECT * FROM progress_details WHERE project_key='$m2' AND houseprobench_key='$row2[hprobech_key]' AND dtesos='$maxprodteos'";
+														$result9 = mysqli_query($link ,$sql9);
+														while($row9=mysqli_fetch_array($result9)){
+															$minos_val=$row9['progress_value'];
+														}
+														
+														   $html.= '<td><label style="font-size:16px;">'.$minos_val.'</label></td>';
+														
+													}
+											   $html.='</tr>';
+									    }
+                          $html.='</table>';
